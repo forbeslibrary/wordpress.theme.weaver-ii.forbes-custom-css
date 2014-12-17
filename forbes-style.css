@@ -26,36 +26,36 @@ h4,
   margin-bottom: 0.25em;
   clear: none;
 }
-h3#comments-title,
-h3#reply-title,
-.menu_bar,
 #author-info,
+#cancel-comment-reply-link,
+#comments-title,
 #infobar,
 #nav-above,
 #nav-below,
-#cancel-comment-reply-link,
-.form-allowed-tags,
+#respond label,
 #site-info,
 #site-title,
 #wp-calendar,
-#comments-title,
-.comment-meta,
-.comment-body tr th,
 .comment-body thead th,
+.comment-body tr th,
+.comment-meta,
 .entry-content label,
-.entry-content tr th,
 .entry-content thead th,
+.entry-content tr th,
 .entry-format,
 .entry-meta,
 .entry-title,
 .entry-utility,
-#respond label,
+.form-allowed-tags,
+.menu_bar,
 .navigation,
 .page-title,
 .pingback p,
 .reply,
 .widget-title,
 .wp-caption-text,
+h3#comments-title,
+h3#reply-title,
 input[type=submit] {
   font-family: 'Lato', Georgia, Times, Serif;
 }
@@ -230,50 +230,52 @@ body.teens:not(.search-results) #sidebar_header {
 /* -- KIDS STYLE ---------------------------------------------------------- */
 /* set Per Page body Class to 'kids' to get this style */
 body.kids:not(.search-results) {
-  background-color: #ffddcc;
+  background-color: #ccddaa;
 }
 body.kids:not(.search-results) #content {
-  font-family: 'Arvo', serif;
+  font-family: inherit;
   font-size: 175%;
+}
+body.kids:not(.search-results) #content a {
+  color: #b82a4b;
 }
 body.kids:not(.search-results) #content h1,
 body.kids:not(.search-results) #content h2,
 body.kids:not(.search-results) #content h3,
 body.kids:not(.search-results) #content .entry-title,
 body.kids:not(.search-results) #content #sidebar_header h1 {
-  font-family: 'Love Ya Like A Sister', sans-serif;
-  color: #8866ee;
-  font-weight: normal;
+  font-family: inherit;
+  color: #b82a4b;
+  font-weight: bold;
   line-height: 1;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-body.kids:not(.search-results) #content h1,
-body.kids:not(.search-results) #content .entry-title,
-body.kids:not(.search-results) #content #sidebar_header h1 {
-  font-size: 300%;
-}
-body.kids:not(.search-results) #content h2 {
-  font-size: 200%;
-}
-body.kids:not(.search-results) #content h3 {
-  font-size: 200%;
-}
 body.kids:not(.search-results) .menu_bar,
 body.kids:not(.search-results) .mobile_menu_bar,
 body.kids:not(.search-results) .menu-add {
-  background-color: #ddccff;
+  background-color: #ccddaa;
+  color: #b82a4b;
+}
+body.kids:not(.search-results) .menu_bar a,
+body.kids:not(.search-results) .mobile_menu_bar a,
+body.kids:not(.search-results) .menu-add a {
+  color: #b82a4b;
 }
 body.kids:not(.search-results) .menu_bar .current_page_item > a,
 body.kids:not(.search-results) .menu_bar .current-menu-item > a,
 body.kids:not(.search-results) .menu_bar .current-cat > a,
 body.kids:not(.search-results) .menu_bar .current_page_ancestor > a {
-  background-color: #bbaaee !important;
+  background-color: #99bb77 !important;
 }
 body.kids:not(.search-results) .current-category-ancestor > a,
 body.kids:not(.search-results) .current-menu-ancestor > a,
 body.kids:not(.search-results) .current-menu-parent > a {
-  background-color: #bbaaee !important;
+  background-color: #99bb77 !important;
+}
+body.kids:not(.search-results) .widget-title {
+  color: #558811;
+  border-bottom: 1px solid #558811;
 }
 body.kids:not(.search-results) #sidebar_header {
   position: absolute;

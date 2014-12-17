@@ -1,15 +1,18 @@
 /* -- KIDS STYLE ---------------------------------------------------------- */
 /* set Per Page body Class to 'kids' to get this style */
 
-@kids-font: 'Arvo', serif;
-@kids-heading-font: 'Love Ya Like A Sister', sans-serif;
-@kids-heading-color: #8866ee;
-@kids-menu-color: #ddccff;
-@kids-selected-menu-color: #bbaaee;
+@kids-font: inherit;
+@kids-heading-font: inherit;
+@kids-heading-color: #b82a4b;
+@kids-menu-color: #ccddaa;
+@kids-selected-menu-color: #99bb77;
 
 body.kids:not(.search-results) {
-  background-color: #ffddcc;
+  background-color: @kids-menu-color;
   #content {
+	  a {
+		  color: @kids-heading-color;
+		}
     font-family: @kids-font;
     font-size: 175%;
     h1,
@@ -19,27 +22,20 @@ body.kids:not(.search-results) {
     #sidebar_header h1 {
       font-family: @kids-heading-font;
       color: @kids-heading-color;
-      font-weight:normal;
+      font-weight:bold;
       line-height:1;
       margin-bottom:0;
       padding-bottom:0;
-    }
-    h1,
-    .entry-title,
-    #sidebar_header h1 {
-      font-size: 300%;
-    }
-    h2 {
-      font-size: 200%;
-    }
-    h3 {
-      font-size: 200%;
     }
   }
   .menu_bar,
   .mobile_menu_bar,
   .menu-add {
     background-color: @kids-menu-color;
+		color: @kids-heading-color;
+		a {
+		  color: @kids-heading-color;
+		}
   }
   .menu_bar {
     .current_page_item > a,
@@ -54,6 +50,10 @@ body.kids:not(.search-results) {
   .current-menu-parent > a {
     background-color: @kids-selected-menu-color!important;
   }
+	.widget-title {
+	  color: #558811;
+		border-bottom: 1px solid #558811;
+	}
   #sidebar_header {
     position:absolute;
     top:20px;
