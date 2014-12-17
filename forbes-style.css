@@ -185,37 +185,6 @@ body.weaver-any-mobile #branding {
 body.teens:not(.search-results) {
   background-color: #000000;
 }
-body.teens:not(.search-results) .widget-title {
-  font-size: 150%;
-  font-weight: bold;
-}
-body.teens:not(.search-results) #sidebar_header h1,
-body.teens:not(.search-results) .widget-title {
-  font-family: 'Allan', cursive;
-}
-body.teens:not(.search-results) #sidebar_header h1 {
-  font-size: 300%;
-}
-body.teens:not(.search-results) #content h1,
-body.teens:not(.search-results) #content h2,
-body.teens:not(.search-results) #content h3,
-body.teens:not(.search-results) #content .entry-title {
-  font-family: 'Allan', cursive;
-}
-body.teens:not(.search-results) #content .entry-title {
-  font-size: 300%;
-}
-body.teens:not(.search-results) #content h1 {
-  font-size: 250%;
-}
-body.teens:not(.search-results) #content h2 {
-  font-size: 200%;
-  font-weight: normal;
-}
-body.teens:not(.search-results) #content h3 {
-  font-size: 150%;
-  font-weight: normal;
-}
 body.teens:not(.search-results) #sidebar_header {
   position: absolute;
   top: 20px;
