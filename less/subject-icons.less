@@ -1,0 +1,81 @@
+/* -- Subject Icons Sprite ------------------------------------------------ */
+
+.subject-sprite(@left, @top) {
+  &:before {
+    background-image: url(http://forbeslibrary.org/wordpress/wp-content/uploads/2014/11/subject-icons.png);
+    background-repeat: no-repeat;
+    background-position: @left @top;
+    height: 32px;
+    width: 32px;
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1em 1em 0;
+   }
+  &:hover:before {
+    -webkit-filter: ~"saturate(2)";
+  }
+}
+
+.ico_history-icon {
+  .subject-sprite(-0px, -0px)
+}
+
+.ico_art-icon {
+  .subject-sprite(-32px, -0px)
+}
+
+.ico_book-icon {
+  .subject-sprite(-0px, -32px)
+}
+
+.ico_business-icon {
+  .subject-sprite(-32px, -32px)
+}
+
+.ico_careers-icon {
+  .subject-sprite(-64px, -0px)
+}
+
+.ico_consumer-information-icon {
+  .subject-sprite(-64px, -32px)
+}
+
+.ico_health-icon {
+  .subject-sprite(-0px, -64px)
+}
+
+.ico_genealogy-icon {
+  .subject-sprite(-32px, -64px)
+}
+
+.ico_info-icon {
+  .subject-sprite(-64px, -64px)
+}
+
+.ico_language-icon {
+  .subject-sprite(-96px, -0px)
+}
+
+.ico_local-history-icon {
+  .subject-sprite(-96px, -32px)
+}
+
+.ico_money-icon {
+  .subject-sprite(-96px, -64px)
+}
+
+.ico_news-icon {
+  .subject-sprite(-0px, -96px)
+}
+
+.ico_science-icon {
+  .subject-sprite(-32px, -96px)
+}
+
+.subject-list {
+  -webkit-column-width: 20em;
+  -moz-column-width: 20em;
+  column-width: 20em;
+  li { -webkit-filter: ~"saturate(1)"; }
+}

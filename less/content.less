@@ -1,0 +1,67 @@
+/* -- Content ------------------------------------------------------------- */
+/* styles generally applying to content (but not to headers, footers, widgets,
+   etc.) */
+
+#content {
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  p {
+    margin-bottom:0.5em;
+  }
+  summary {
+    display: inline-block;
+  }
+  tr th,
+  thead th {
+    color: #000;
+    background-color:transparent;
+  }
+  table {
+    width: auto;
+    border:none;
+    tr:nth-child(even) {
+      background-color: #eee;
+    }
+    tr:nth-child(odd) {
+      background-color: #fff;
+    }
+  }
+  table.plain tr {
+    background-color: #fff;
+  }
+  tr td {
+    border:none;
+  }
+  tr th {
+    font-size:inherit;
+  }
+  .alignright,
+  .alignleft {
+    max-width:45%;
+    clear:both;
+    margin-top:0.5em;
+    margin-bottom:0.5em;
+    @media only screen and (max-width:640px) {
+       max-width:100%;
+       width:100%;
+       display:block;
+       float:none;
+       margin:0 auto;
+    }
+  }
+  .alignleft {
+    margin-right:1em;
+  }
+  .entry-title a,
+  a[href^=tel],
+  a[href^=sms],
+  a[href^=mailto] {
+    /* never underline these links, even in content */
+    text-decoration: none;
+  }
+  .wp-caption img {
+    width:100%;
+  }
+}

@@ -1,0 +1,509 @@
+// This file must be processed using the css preprocessor LESS
+// http://lesscss.org/
+
+// Variables
+@main-font: 'Lato', Georgia,Times,Serif;
+@accent-color: #722327;
+@contrast-color: #006C64;
+
+/* !-- GENERAL APPEARANCE ------------------------------------------------- */
+:focus {
+  outline: solid gold 2px;
+}
+
+dd {
+  margin-bottom: 0.5em;
+}
+
+body {
+  font-family:@main-font
+}
+
+h1,
+h2,
+h3,
+h4,
+.entry-header,
+.entry-title,
+.widget-title,
+.menu_bar {
+  font-family: @main-font;
+  font-weight: 700;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+  clear: none;
+}
+
+.entry-content {
+  h1:extend(h1) {}
+  h2:extend(h2) {}
+  h3:extend(h3) {}
+  h4:extend(h4) {}
+}
+
+#author-info,
+#cancel-comment-reply-link,
+#comments-title,
+#infobar,
+#nav-above,
+#nav-below,
+#respond label,
+#site-info, #site-title,
+#wp-calendar,
+.comment-body thead th,
+.comment-body tr th,
+.comment-meta,
+.entry-content label,
+.entry-content thead th,
+.entry-content tr th,
+.entry-format,
+.entry-meta, .entry-title,
+.entry-utility,
+.form-allowed-tags,
+.menu_bar,
+.navigation,
+.page-title,
+.pingback p,
+.reply,
+.widget-title,
+.wp-caption-text,
+h3#comments-title,
+h3#reply-title,
+input[type=submit] {
+  font-family:@main-font
+}
+
+p {
+  margin-bottom:0.5em;
+}
+
+table caption {
+  font-weight: 900;
+  color: #000;
+  font-size: 130%;
+  border-bottom: solid 1px #000;
+}
+
+.entry-header,
+.entry-title {
+  font-weight: 900;
+}
+
+.entry-content {
+  padding:0;
+}
+
+.widget-area {
+  padding:0;
+}
+
+@import "content.less";
+
+#infobar {
+  /* smaller and less obtrusive than the default */
+  font-size: 100%;
+  padding: 0;
+  line-height: 1;
+  body.weaver-any-mobile & {
+    font-size:120%;
+    line-height:1.3;
+    a,
+    .bcur-page {
+      margin:0 0.2em;
+    }
+  }
+}
+
+#site-info a {
+  font-size: small;
+  color: #fff;
+  font-weight:bold;
+}
+
+#wrapper {
+  padding: 0.5in;
+}
+
+/* CUSTOM LOGO */
+#branding {
+  #custom-header-logo {
+    display:inline;
+    vertical-align:middle;
+  }
+  #custom-header-logo.mobile {
+    display:block;
+    margin: 0 auto;
+    max-width:90%;
+  }
+  body.weaver-any-mobile & {
+    padding:0;
+  }
+}
+
+@import "teens.less";
+@import "kids.less";
+@import "search-results.less";
+@import "inject-header.less";
+
+/* HIDE TOP DESKTOP ICON ON SMALL SCREENS */
+.wvr-to-desktop-top {
+  display: none;
+}
+
+/* LIBRARY HOURS WIDGET STYLE */
+.sidebar-hours {
+  margin-top: 0.3em;
+}
+
+.sidebar-hours>table {
+  font-size:80%;
+}
+
+/* REALLY SIMPLE GALLERY WIDGET */
+/* used for Hosmer Gallery widget on home page */
+img.rsg_image {
+  width: 100%;
+  border: solid black 1px;
+}
+
+dl.rsgallery {
+  margin: 0;
+}
+
+/* WIDGET BUTTONS */
+.widget-button {
+    font-size: large;
+    font-weight: bold;
+    margin: 0;
+    padding: 1em;
+    display: block;
+    text-align: center;
+}
+
+/* STAFF PICKS THUMBNAILS WIDGET STYLE */
+.wvr-show-posts.staff-picks-thumbnails  {
+  .hentry {
+    padding:0;
+    margin-bottom:10px;
+    .entry-header {
+      margin:0;
+    }
+  }
+  img.attachment-thumbnail {
+    border-radius:1em;
+    padding:0;
+   }
+}
+
+/* READALIKES STYLE */
+#content .readalikes {
+  .post {
+    display:inline-block;
+    width:260px;
+    height:240px;
+    vertical-align:top;
+    text-align:center;
+  }
+  .entry-title {
+    font-size: initial;
+    font-style: italic;
+    height: 6ex;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 300em; // Exact width does not matter, but it must be set
+  }
+  img.wp-post-image {
+    float:none;
+    border-radius:1em;
+  }
+}
+
+/* MAIN PAGE NEWS ITEMS STYLE */
+#content .news-items {
+  overflow:visible;
+  margin-bottom: 2em;
+  font-size: smaller;
+  article {
+    padding:0;
+  }
+  .entry-title>a {
+    margin-left: 36px;
+  }
+  .entry-title>a:before {
+    content: "";
+    background-image: url(http://forbeslibrary.org/wordpress/wp-content/uploads/2014/11/homepage-sprites.png);
+    background-repeat: no-repeat;
+    position:absolute;
+    left:0;
+    width:32px;
+    height:32px;
+    background-position: 0 -32px;
+  }
+}
+
+/* LIBRARY ALERTS STYLE */
+/* For alerts announcing closing, delays, and other important news. */
+.library-alerts {
+  font-weight:bold;
+  font-size:150%;
+  margin:-0.5in -0.5in 0.5in -0.5in;
+  .hentry,
+  article {
+    background-color:#D22;
+    color:#FFF;
+    padding:0.05em 0.5em;
+    margin:0;
+  }
+  .post-edit-link {
+    float:none;
+  }
+  footer, .entry-content {
+    display:inline-block;
+    padding-right:0;
+  }
+  body.weaver-any-mobile & {
+    margin: 0 0 5px 0;
+    font-size: 130%;
+  }
+  body.weaver-desktop & .hentry {
+    padding: 0.05em 0.5em;
+  }
+}
+
+/* REMOVE SHADOWS FROM IMAGES IN POSTS */
+#content {
+  .wp-caption img, img.wp-post-image, img[class*="wp-image-"] {
+    -moz-box-shadow: none;
+    box-shadow: none;
+    padding:0;
+  }
+}
+
+/* LibCal EVENT STYLES */
+#content #api_month_cid3294_iid1448 {
+  table tr {
+    background-color: #fff;
+  }
+  .tevent{
+    padding-bottom: 1em;
+  }
+  .tcat {
+    display: none;
+  }
+  .ttitles {
+    display:none;
+  }
+  .ttit>td {
+    font-weight:bold;
+    font-size: larger;
+  }
+  .ttit>td{
+    padding:0.5ex;
+  }
+  .tdat>td,
+  #api_month_cid3294_iid1448 .ttim>td,
+  #api_month_cid3294_iid1448 .tloc>td,
+  #api_month_cid3294_iid1448 .tpre>td {
+    padding:0em 24px;
+  }
+  .tevent td {
+    border:none;
+  }
+  p:last-child {
+    margin:0;
+  }
+}
+
+/* BOOK DISCUSSION GROUP LibCal EVENT STYLES */
+.book-discussion-group-page #api_month_cid3294_iid1448  {
+  .tevent {
+    border: none;
+  }
+  .tdat td {
+    font-weight:bold;
+    font-size:larger;
+  }
+  .ttit {
+    display:none;
+  }
+  .ttim {
+    display:none;
+  }
+  .tloc {
+    display:none;
+  }
+}
+
+/* FILM LISTS */
+#content article.post.category-film-lists {
+  display: inline-block;
+  max-width: 100%;
+  img.alignleft {
+    max-width: 100%;
+  }
+}
+
+/* LIBRARY STORE */
+#content .product-image {
+  float:right;
+  margin-left:1em;
+}
+
+/* PANORAMAS */
+.forbes_panorama_wrapper {
+  padding: 0;
+  width:100%;
+  max-width:100%;
+}
+
+/* PRINTING MODIFICATIONS */
+@media print {
+  #site-title,
+  #searchForm,
+  #my-account {
+    display:none;
+  }
+  #branding #custom-header-logo {
+    height:0.5in;
+  }
+}
+
+/* SORTABLE TABLE STYLES */
+#content table.sortable {
+  th:hover:not(.sorttable_nosort) {
+  background: #ade8ff;
+  }
+  th {
+    background-color: #add8e6;
+  }
+  th:not(.sorttable_nosort) {
+    cursor: pointer;
+  }
+  th,
+  td {
+  border: 1px solid #d5d5d5;
+    vertical-align: top;
+    word-wrap: break-word;
+    padding: 4px;
+  }
+}
+
+/* CFORMS FORM STYLE */
+.cform {
+  max-width: 500px;
+  color: #000;
+  input[type=text],
+  input[type=tel],
+  input[type=email],
+  textarea {
+    display: block;
+    width:100%;
+  }
+  input[type=date],
+  input[type=time] {
+    display: block;
+  }
+  li {
+    margin-bottom: 0.5em;
+    list-style-type: none;
+  }
+  label {
+    color: #000;
+  }
+  select {
+    padding: 5px;
+    display: block;
+  }
+}
+
+fieldset.cf_hidden {
+  line-height: 0;
+}
+
+.cf_info.failure {
+  color: red;
+  border: solid 1em red;
+  border-radius:1em;
+}
+
+.cf_info.waiting{
+  color: purple;
+  border: solid 1em purple;
+  border-radius:1em;
+}
+
+.cf_info.success {
+  color: green;
+  border: solid 1em green;
+  border-radius:1em;
+}
+
+.cf_info {
+  font-weight: bold;
+  padding: 1em;
+}
+
+.cf_li_err {
+  border-left: solid 3px red;
+  padding-left: 1em;
+}
+
+ul.cf_li_text_err li {
+  color: red;
+  font-weight: bold;
+  margin: 0;
+}
+
+ul.cf_li_text_err {
+  margin: 0;
+}
+
+/* Forbes Databases */
+#forbes_databases_nav label {
+  font-size: large;
+  color: @accent-color;
+}
+
+#forbes_databases_select {
+  margin: 0 0 0 1em;
+}
+
+body:not(.search-results) {
+  #content .forbes_databases {
+    margin-left:64px;
+    padding-left:1em;
+    position:relative;
+  }
+  .forbes_database_availability_icon {
+    position:absolute;
+    left:-64px;
+  }
+ .forbes_database_feature_icon {
+    position: absolute;
+    left: -60px;
+    top: 86px;
+    width: 56px;
+    border: 1px solid;
+  }
+}
+
+.search-results #content .forbes_databases .entry-meta {
+  display:none;
+}
+
+/* Page Lists */
+.page-list {
+  -webkit-column-width: 20em;
+  -moz-column-width: 20em;
+  column-width: 20em;
+  list-style-position: inside;
+  ul {
+    list-style-position: inside;
+  }
+}
+
+@import "404.less";
+@import "subject-icons.less";
+@import "homepage-icons.less";
+

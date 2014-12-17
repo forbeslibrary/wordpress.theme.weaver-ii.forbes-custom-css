@@ -1,0 +1,89 @@
+/* -- Inject Header ------------------------------------------------------- */
+// The code in this file is used to style the content set in Weaver ii options
+// under Advanced Options > HTML Insertion > Site Header Insert Code
+
+// position the my account button and wireless printing links
+#header-buttons {
+  position:absolute;
+  right:0;
+  bottom:132px;
+  display:block;
+  white-space: nowrap;
+  background-color: white;
+  a {
+    padding: 0 0.5em;
+  }
+  #my-account {
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin: 0.5em 0.5em 0 0;
+    background-color: @accent-color;
+    color:#FFFFFF;
+    border:none;
+    #my-account {
+      margin:2px 1em 0 0;
+    }
+  }
+  #wireless-printing-link {
+    display: inline-block;
+    text-indent: -999em;
+    vertical-align: 90%;
+    height:32px;
+    width:32px;
+    background-image: url('http://forbeslibrary.org/wordpress/wp-content/uploads/2014/02/wireless-printing-icon32x32.png');
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+ }
+  @media only screen and (max-width:815px) {
+    position:static;
+  }
+  body.weaver-any-mobile & {
+    position:static;
+    max-width:348px;
+    margin:1em auto 1em auto;
+    text-align: center;
+    a {
+      padding: 0 0.2em;
+    }
+    #wireless-printing-link {
+      display:none;
+    }
+  }
+}
+
+// header search form style 
+#search {
+  width:30em;
+  body.weaver-any-mobile & {
+    width:250px;
+  }
+}
+.searchOptions {
+  position: relative;
+}
+#searchOpt_advanced {
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+#searchForm {
+  background:transparent;
+  display:inline-block;
+  float:right;
+  margin-right:20px;
+  margin-top:40px;
+  .searchformimg {
+    margin: 0 0 -5px 0;
+  }
+  body.weaver-any-mobile & {
+    display:block;
+    float:none;
+    width:290px;
+    margin: 0 auto;
+  }
+  @media only screen and (max-width:815px) {
+    display:block;
+    float:none;
+    width:360px;
+  }
+}

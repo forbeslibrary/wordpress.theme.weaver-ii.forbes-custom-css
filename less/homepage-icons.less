@@ -1,0 +1,37 @@
+/* -- Homepage Sprites ---------------------------------------------------- */
+
+.spritebox(@left, @top) {
+  background-image: url(http://forbeslibrary.org/wordpress/wp-content/uploads/2014/11/homepage-sprites.png);
+  background-repeat: no-repeat;
+  background-position: @left @top;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  display: inline-block;
+  text-indent: -9999px;
+  margin:1px;
+}
+
+.ico_facebook {
+  .spritebox(-0px, -0px)
+}
+
+.ico_twitter {
+  .spritebox(-32px, -0px)
+}
+
+.ico_news {
+  .spritebox(-0px, -32px)
+}
+
+.ico_youtube {
+  .spritebox(-32px, -32px)
+}
+
+.ico_instagram {
+  .spritebox(-64px, -0px)
+}
+
+.ico_flickr {
+  .spritebox(-64px, -32px)
+}

@@ -1,0 +1,31 @@
+/* -- Search Results ------------------------------------------------------ */
+// we are loosely mimicking Google's search results here
+
+body.search-results {
+  #content h1 {
+    /* larger than the default */
+    font-size: 150%;
+  }
+  #content h2 {
+    /* smaller than the default */
+    font-size: 130%;
+  }
+  #content h2.entry-title a {
+    /* blue like in Google search results */
+    color: #1e0fbe;
+  }
+  #content h3 {
+font-size: 110%; font-weight:normal; }
+  header.entry-header {
+    /* tighten up the spacing of the link title and path, both of which appear in the entry-header */
+    line-height: 1;
+  }
+  .entry-summary {
+    /* position the entry summary directly below the header, without unnecessary padding */
+    padding:0;
+  }
+  span.forbes_search_results_page_path {
+    /* the path should be small so as to be unobtrusive */
+    font-size: 80%;
+  }
+}
