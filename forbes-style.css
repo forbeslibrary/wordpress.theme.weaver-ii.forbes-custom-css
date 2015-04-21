@@ -144,6 +144,7 @@ table caption {
 }
 #content .wp-caption img {
   width: 100%;
+  margin: 0;
 }
 #infobar {
   /* smaller and less obtrusive than the default */
@@ -978,4 +979,9 @@ body:not(.search-results) .forbes_database_feature_icon {
   display: inline-block;
   text-indent: -9999px;
   margin: 1px;
+}
+/* -- Fixes for Browser Weirdness ------------------------------------------ */
+.wp-caption .wp-caption-text,
+.gallery-caption {
+  margin: 0 !important;
 }
