@@ -341,7 +341,7 @@ body.weaver-any-mobile #header-buttons #wireless-printing-link {
   display: none;
 }
 #search {
-  width: 30em;
+  width: 25em;
 }
 body.weaver-any-mobile #search {
   width: 250px;
@@ -572,9 +572,6 @@ body.weaver-desktop .library-alerts .hentry {
   #searchForm,
   #my-account {
     display: none;
-  }
-  #branding #custom-header-logo {
-    height: 0.5in;
   }
 }
 /* SORTABLE TABLE STYLES */
