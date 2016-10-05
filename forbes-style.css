@@ -323,7 +323,7 @@ body.search-results span.forbes_search_results_page_path {
   background-repeat: no-repeat;
   background-position-x: 50%;
 }
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 960px) {
   #header-buttons {
     position: static;
   }
@@ -370,7 +370,7 @@ body.weaver-any-mobile #searchForm {
   width: 290px;
   margin: 0 auto;
 }
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 960px) {
   #searchForm {
     display: block;
     float: none;
