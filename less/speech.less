@@ -3,6 +3,7 @@
   ul {
     list-style-type: none;
   }
+  
   .next.page-numbers {
     content: "next page";
   }
@@ -11,5 +12,9 @@
   }
   .current.page-numbers::after {
     content: "(current page)"; 
+  }
+  
+  .breadcrumbs::before {
+    content: "breadcrumbs: ";
   }
 }
