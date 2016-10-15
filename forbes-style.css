@@ -985,3 +985,9 @@ body:not(.search-results) .forbes_database_feature_icon {
 .gallery-caption {
   margin: 0 !important;
 }
+/* -- Improved experience for screen reader users --------------------------- */
+@media speech {
+  ul {
+    list-style-type: none;
+  }
+}
