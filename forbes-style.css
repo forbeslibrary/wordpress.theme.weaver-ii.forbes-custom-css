@@ -986,6 +986,7 @@ body:not(.search-results) .forbes_database_feature_icon {
   margin: 0 !important;
 }
 /* -- Improved experience for screen reader users --------------------------- */
+/* -- Unfortunately, this is ignored by most web browsers (10/18/2016) ------ */
 @media speech {
   ul {
     list-style-type: none;
