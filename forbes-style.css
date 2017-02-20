@@ -499,52 +499,59 @@ body.weaver-desktop .library-alerts .hentry {
   padding: 0;
 }
 /* LibCal EVENT STYLES */
-#content #api_month_cid3294_iid1448 table tr {
+#content #api_month_cid228_iid1448 table tr {
   background-color: #fff;
 }
-#content #api_month_cid3294_iid1448 .tevent {
+#content #api_month_cid228_iid1448 .s-lc-ea-tevent,
+#content #api_month_cid228_iid1448 .tevent {
   padding-bottom: 1em;
 }
-#content #api_month_cid3294_iid1448 .tcat {
+#content #api_month_cid228_iid1448 .s-lc-ea-tcat,
+#content #api_month_cid228_iid1448 .tcat {
   display: none;
 }
-#content #api_month_cid3294_iid1448 .ttitles {
+#content #api_month_cid228_iid1448 .s-lc-ea-ttitles,
+#content #api_month_cid228_iid1448 .ttitles {
   display: none;
 }
-#content #api_month_cid3294_iid1448 .ttit > td {
+#content #api_month_cid228_iid1448 .s-lc-ea-ttit > td,
+#content #api_month_cid228_iid1448 .ttit > td {
   font-weight: bold;
   font-size: larger;
 }
-#content #api_month_cid3294_iid1448 .ttit > td {
+#content #api_month_cid228_iid1448 .s-lc-ea-ttit > td,
+#content #api_month_cid228_iid1448 .ttit > td {
   padding: 0.5ex;
 }
-#content #api_month_cid3294_iid1448 .tdat > td,
-#content #api_month_cid3294_iid1448 #api_month_cid3294_iid1448 .ttim > td,
-#content #api_month_cid3294_iid1448 #api_month_cid3294_iid1448 .tloc > td,
-#content #api_month_cid3294_iid1448 #api_month_cid3294_iid1448 .tpre > td {
+#content #api_month_cid228_iid1448 .s-lc-ea-tdat,
+#content #api_month_cid228_iid1448 .tdat > td,
+#content #api_month_cid228_iid1448 #api_month_cid228_iid1448 .ttim > td,
+#content #api_month_cid228_iid1448 #api_month_cid228_iid1448 .tloc > td,
+#content #api_month_cid228_iid1448 #api_month_cid228_iid1448 .tpre > td {
   padding: 0em 24px;
 }
-#content #api_month_cid3294_iid1448 .tevent td {
+#content #api_month_cid228_iid1448 .s-lc-ea-tevent td,
+#content #api_month_cid228_iid1448 .tevent td {
   border: none;
 }
-#content #api_month_cid3294_iid1448 p:last-child {
+#content #api_month_cid228_iid1448 p:last-child {
   margin: 0;
 }
 /* BOOK DISCUSSION GROUP LibCal EVENT STYLES */
-.book-discussion-group-page #api_month_cid3294_iid1448 .tevent {
+.book-discussion-group-page #api_month_cid228_iid1448 .tevent {
   border: none;
 }
-.book-discussion-group-page #api_month_cid3294_iid1448 .tdat td {
+.book-discussion-group-page #api_month_cid228_iid1448 .tdat td {
   font-weight: bold;
   font-size: larger;
 }
-.book-discussion-group-page #api_month_cid3294_iid1448 .ttit {
+.book-discussion-group-page #api_month_cid228_iid1448 .ttit {
   display: none;
 }
-.book-discussion-group-page #api_month_cid3294_iid1448 .ttim {
+.book-discussion-group-page #api_month_cid228_iid1448 .ttim {
   display: none;
 }
-.book-discussion-group-page #api_month_cid3294_iid1448 .tloc {
+.book-discussion-group-page #api_month_cid228_iid1448 .tloc {
   display: none;
 }
 /* FILM LISTS */
