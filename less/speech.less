@@ -1,0 +1,21 @@
+/* -- Improved experience for screen reader users --------------------------- */
+/* -- Unfortunately, this is ignored by most web browsers (10/18/2016) ------ */
+@media speech {
+  ul {
+    list-style-type: none;
+  }
+
+  .next.page-numbers {
+    content: "next page";
+  }
+  .prev.page-numbers {
+    content: "next page";
+  }
+  .current.page-numbers::after {
+    content: "(current page)";
+  }
+
+  .breadcrumbs::before {
+    content: "breadcrumbs: ";
+  }
+}
