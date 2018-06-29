@@ -15,4 +15,4 @@ useful as is.
 Instructions for compiling css
 ------------------------------
 
-type at command prompt:  `lessc less/base.less > forbes-style.css`
+type at command prompt:  `lessc --compress less/base.less > forbes-style.css`
