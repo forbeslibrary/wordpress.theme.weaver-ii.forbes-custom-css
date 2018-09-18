@@ -4,7 +4,7 @@
 
 @headerBreakPoint: 960px;
 
-// position the my account button and wireless printing links
+// position the my account button
 #header-buttons {
   position:absolute;
   right:0;
@@ -23,16 +23,6 @@
     color:#FFFFFF;
     border:none;
   }
-  #wireless-printing-link {
-    display: inline-block;
-    text-indent: -999em;
-    vertical-align: 90%;
-    height:32px;
-    width:32px;
-    background-image: url('http://forbeslibrary.org/wordpress/wp-content/uploads/2014/02/wireless-printing-icon32x32.png');
-    background-repeat: no-repeat;
-    background-position-x: 50%;
- }
   @media only screen and (max-width:@headerBreakPoint) {
     position:static;
   }
@@ -43,9 +33,6 @@
     text-align: center;
     a {
       padding: 0 0.2em;
-    }
-    #wireless-printing-link {
-      display:none;
     }
   }
 }
