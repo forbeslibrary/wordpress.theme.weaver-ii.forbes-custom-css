@@ -1,8 +1,8 @@
 .libraryh3lp span {
 	position: fixed;
 	background: white;
-	bottom: 1px;
-	right: 1px;
+	bottom: 0.2em;
+	right: 0.2em;
 	padding: 0 0.5em;
 	font-size: 200%;
 	border: solid;
@@ -14,6 +14,9 @@
 	&.chat-offline, &.chat-loading {
 		color: lightgrey;
 		border-color: lightgrey;
+		a {
+			color: lightgrey;
+		}
 	}
 }
 .libraryh3lp a:focus span {
@@ -22,4 +25,18 @@
 .libraryh3lp a:hover span {
 	background-color: #ffed8a;
 	color: @accent-color;
+}
+
+.show-if-chat-available {
+	display: none;
+	body.chat-available & {
+		display: initial;
+	}
+}
+
+.show-if-chat-offline {
+	display: none;
+	body.chat-offline & {
+		display: initial;
+	}
 }
