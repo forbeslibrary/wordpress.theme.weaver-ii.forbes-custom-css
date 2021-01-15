@@ -8,6 +8,15 @@
 @accent-color: #722327;
 @contrast-color: #006C64;
 
+/* !-- Accessibility ------------------------------------------------------ */
+.accessible-hide {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px; padding: 0; border: 0;
+}
+
 /* !-- GENERAL APPEARANCE ------------------------------------------------- */
 :focus {
   outline: solid gold 2px;
@@ -528,3 +537,4 @@ body:not(.search-results) {
 @import "homepage-icons.less";
 @import "fixes.less";
 @import "speech.less";
+@import "libraryh3lp.less";
