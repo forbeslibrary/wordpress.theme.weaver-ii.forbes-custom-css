@@ -4,7 +4,7 @@ wordpress.theme.weaver-ii.forbes-custom-css
 Custom css for use with the Weaver ii Wordpress theme, as used by
 forbeslibrary.org
 
-This repository consists of [LESS](http://lesscss.org/) code from which CSS can
+This repository consists of [LESS](https://lesscss.org/) code from which CSS can
 be derived.
 
 The resulting CSS is intended to be added using Weaver ii's advanced
